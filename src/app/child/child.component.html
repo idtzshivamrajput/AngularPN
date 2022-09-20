@@ -1,0 +1,20 @@
+<p>child works!</p>
+<h1 class="bg-success tex-black text-center p-4">{{parentToChild}}</h1>
+
+<table class="table table-bordered text-black">
+      <tr>
+        <th >id</th>
+        <th >name</th>
+        <th >age</th>
+        <th >email</th>
+      </tr>
+      <tr *ngFor= "let s of student">
+        <td>{{s.id}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.age}}</td>
+        <td>{{s.email}}</td>
+
+
+      </tr>
+    
+  </table>

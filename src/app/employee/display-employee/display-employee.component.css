@@ -1,0 +1,21 @@
+.btn1{
+    
+    position: fixed;
+    right: 20%;
+    top: 10%;
+}
+.table{
+    position: fixed !important;
+    top: 20% !important ;
+    right: 20%;
+    width: 60%;
+    border: 2px solid ;
+    border-color: red !important;
+    border-color: aqua ;
+
+}
+.a{
+    border: 2px solid;
+    /* border-color: blue; */
+    text-align: center;
+}

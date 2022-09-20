@@ -1,0 +1,68 @@
+.section0{
+    background-image: url(https://www.firstfiddle.in/assets/images/new-our-team.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+.section0div{
+    position: relative;
+    top: 41%;
+    text-align: center;
+}
+
+.section0p{
+    width: 67%;
+    position: relative;
+    top: 20%;
+    left: 16%;
+    font-size: 77px;
+    color: white;
+    font-family: sans-serif;
+    
+}
+.maindiv{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+
+}
+.ourteam_content{
+    font-family: 'Montserrat',sans-serif;
+letter-spacing: 1px;
+word-spacing: 2px;
+color: #000000;
+}
+.div1img{
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+.footericons  i{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    color: #fcb21b;
+    
+}
+.btn_ourteam{
+    width: 17%;
+    position: relative;
+    top: 1%;
+    left: 0%;
+    background-color: #fbac29;
+    padding: 10px;
+    color: white;
+}
+
+.box p{
+    padding: 3px 0;
+    font-size: 15px;
+}
+.imgname{
+    
+    margin-top: -16%;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fcb21b;
+    
+}

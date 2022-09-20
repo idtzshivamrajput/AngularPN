@@ -1,0 +1,23 @@
+<p>news-api works!</p>
+<table class="table table-bordered text-black">
+
+    <tr>
+        <th>author</th>
+        <th>title</th>
+        <th>description</th>
+        <th>image</th>
+    </tr>
+
+
+
+    <tr *ngFor="let s of news_array">
+        <td>{{s.author}}</td>
+        <td>{{s.title}}</td>
+        <td>{{s.description}}</td>
+        <td><img [src]="s.urlToImage" width="100px" height="100px"></td>
+
+
+    </tr>
+
+
+</table> -->

@@ -1,0 +1,21 @@
+.img_tittle{
+    position: absolute;
+color: #fff;
+text-align: center;
+left: 0%;
+right: 0;
+top: 45%;
+letter-spacing: 4px;
+text-transform: uppercase;
+}
+.division{
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-bottom: 30px;
+
+}
+.div1{
+    width: 420px;
+    margin-left: 20px;
+    margin-right: 20px;
+}

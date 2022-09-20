@@ -1,0 +1,28 @@
+<p> if works!</p>
+<h1 *ngIf="show">itm gwalior</h1>
+
+<div *ngIf="department === 'computer' then correct else wrong">
+
+</div>
+
+<ng-template #correct>
+    <h1 class="text-center text-white bg-success p-3">
+
+        sirr you are computer depat......
+
+    </h1>
+
+</ng-template>
+
+<ng-template #wrong>
+    <h1 class="text-center text-white bg-danger p-3">
+
+       khtm bye bye tata gya......
+
+
+
+    </h1>
+
+</ng-template>
+
+

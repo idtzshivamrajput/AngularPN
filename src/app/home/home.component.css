@@ -1,0 +1,124 @@
+
+
+
+.a1{
+	color: white;
+	margin-left: 26px;
+	font-size: 18px;
+}
+.a1_borderbox{
+	border: 2px solid;
+	border-color: #fbab29;
+	color: white;
+	margin-left: 26px;
+	padding: 6px;
+
+}
+
+
+.backimg{
+	width: 100%;
+}
+.a{
+	padding-top: 20px;
+	text-transform: uppercase;
+	font-family: 'prague';
+	letter-spacing: 3px;
+}
+.b{
+	line-height: 35px;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	padding-right: 5px;
+	
+	text-align: justify;
+}
+.img{
+	    position: relative;
+    
+    padding-right: 15px;
+    padding-left: 15px;
+	width: 80%;
+}
+.btn1{
+	width: 31%;
+	position: relative;
+	top: 30%;
+	left: 45%;
+	background-color: #fbac29;
+	padding: 10px;
+	color: white;
+	}
+.container1{
+
+	height: 50%;
+}
+.section1{
+	background-image: url(https://firstfiddle.in/assets/images/outletbanner.png);
+	width: 100%;
+	background-size: cover;
+
+}
+.section1_div{
+	padding: 100px;
+	color: white;
+	margin-bottom: 40px;
+}
+.section1_div h2{
+	margin-top: 20px;
+	font-family: serif;
+	
+	text-align: center;
+}
+.section1_div p{
+	margin-top: 20px;
+	font-family: serif;
+	font-size: 20px;
+	text-align: justify;
+}
+.btn_section1{
+	border-radius: 0px;
+	width: 31%;
+	position: relative;
+	top: 30%;
+	left: 35%;
+	background-color: #fbac29;
+	padding: 10px;
+	color: white;
+}
+.section2{
+	margin-top: 50px;
+}
+.section3{
+	background-image: url(https://firstfiddle.in/assets/images/outletbanner.png);
+	width: 100%;
+	background-size: cover;
+
+}
+.section3_div{
+	padding: 100px;
+	color: white;
+	margin-bottom: 40px;
+}
+.section3_div h2{
+	margin-top: 20px;
+	font-family: serif;
+	
+	text-align: center;
+}
+.section3_div p{
+	margin-top: 20px;
+	font-family: serif;
+	font-size: 20px;
+	text-align: justify;
+}
+.btn_section3{
+	border-radius: 0px;
+	width: 31%;
+	position: relative;
+	top: 30%;
+	left: 35%;
+	background-color: #fbac29;
+	padding: 10px;
+	color: white;
+}
