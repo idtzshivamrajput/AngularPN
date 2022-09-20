@@ -18,13 +18,9 @@ export class DisplayEmployeeComponent implements OnInit {
       title:new FormControl(''),
       description:new FormControl(''),
       body:new FormControl(''),
-
     }
-
     )
   }
-
-
     addemp(){
       // console.log(this.form.value);
       this.emp_service.emp_insert(this.form.value).subscribe((res)=>{

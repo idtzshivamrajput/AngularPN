@@ -12,4 +12,8 @@ export class EmployeeService {
   emp_insert(all_emp:any){
     return this.http.post(this.url+'bloginsert',all_emp)
   }
+
+  add_emp_insert(all_add_emp:any){
+    return this.http.post(this.url+'bloginsert',all_add_emp)
+  }
 }
