@@ -5,6 +5,8 @@ import { DisplayEmployeeComponent } from './display-employee/display-employee.co
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { ViewEmpComponent } from './view-emp/view-emp.component';
 
 
 
@@ -16,12 +18,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     EditEmployeeComponent,
     EditEmployeeComponent,
     DisplayEmployeeComponent,
-    AddEmployeeComponent
+    AddEmployeeComponent,
+    ViewEmpComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    RouterModule,
     HttpClientModule,
     
   ],

@@ -9,26 +9,35 @@ import { EmployeeService } from '../employee.service';
   styleUrls: ['./display-employee.component.css']
 })
 export class DisplayEmployeeComponent implements OnInit {
-  form:any;
+  form: any;
+  viewemp: any
+  viewemparray: any
 
-  constructor(private emp_service:EmployeeService) { }
+  constructor(private emp_service: EmployeeService) { }
 
   ngOnInit(): void {
-    this.form=new FormGroup({
-      title:new FormControl(''),
-      description:new FormControl(''),
-      body:new FormControl(''),
+    this.form = new FormGroup({
+      title: new FormControl(''),
+      description: new FormControl(''),
+      body: new FormControl(''),
     }
     )
-  }
-    addemp(){
-      // console.log(this.form.value);
-      this.emp_service.emp_insert(this.form.value).subscribe((res)=>{
-        console.log(res);
-      }
+    this.emp_service.view_emp().subscribe((res) => {
+      console.log(res)
+      this.viewemp = res
+      this.viewemparray = this.viewemp.getall
+      console.log(this.viewemparray);
+    })
 
-      )
+  }
+  display_add_emp() {//addemp
+    // console.log(this.form.value);
+    this.emp_service.emp_insert(this.form.value).subscribe((res) => {
+      console.log(res);
     }
+
+    )
+  }
 
 }
 

@@ -29,7 +29,7 @@
                     </div>
                     <!---modal header end--->
                     <div class="modal-body">
-                        <form [formGroup]="form" (ngSubmit)="addemp()">
+                        <form [formGroup]="form" (ngSubmit)="display_add_emp()">
                             <div class="mb-3">
                                 <label>Title</label>
                                 <input type="text" name="" class="form-control" formControlName="title">
@@ -51,7 +51,7 @@
 
                     </div><!-- modal body--->
                 </div>
-                <!---model dialog--- end=--->
+                <!---model dialog--- end--->
             </div>
         </div>
     </div>
@@ -66,9 +66,23 @@
                 <tr>
 
                     <th class="a">ID</th>
-                    <th class="a">Name</th>
-                    <th class="a">Email</th>
-                    <th class="a">City</th>
+                    <th class="a">title</th>
+                    <th class="a">body</th>
+                    <th class="a">description</th>
+                    <th class="a">Action</th>
+                </tr>
+                <tr *ngFor="let get of viewemparray">
+
+                    <td class="a">{{get._id}}</td>
+                    <td class="a">{{get.title}}</td>
+                    <td class="a">{{get.body}}</td>
+                    <td class="a">{{get.description}}</td>
+                    <td><a class="btn btn-info" [routerLink]="['/view_bLog',get._id]">View</a><br>
+                        <a class="btn btn-success">Edit</a><br>
+                        <a class="btn btn-danger">Delete</a><br>
+
+
+                    </td>
                 </tr>
             </thead>
             <tbody>

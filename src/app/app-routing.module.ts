@@ -5,6 +5,7 @@ import { BrandsComponent } from './brands/brands.component';
 import { CareerComponent } from './career/career.component';
 import { ContactComponent } from './contact/contact.component';
 import { EditComponent } from './edit/edit.component';
+import { ViewEmpComponent } from './employee/view-emp/view-emp.component';
 import { HomeComponent } from './home/home.component';
 import { OurTeamComponent } from './our-team/our-team.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
@@ -46,6 +47,11 @@ const routes: Routes = [
   {
     path:"edit/:id",
     component:EditComponent
+
+  },
+  {
+    path:"view_blog/:id",
+    component:ViewEmpComponent
 
   },
   {

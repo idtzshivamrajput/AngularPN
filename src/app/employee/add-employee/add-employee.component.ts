@@ -9,6 +9,8 @@ import { EmployeeService } from '../employee.service';
 })
 export class AddEmployeeComponent implements OnInit {
   form:any
+  viewemp:any
+  viewemparray:any
 
   constructor(private empaddservice : EmployeeService) { }
 
@@ -18,14 +20,22 @@ export class AddEmployeeComponent implements OnInit {
       description:new FormControl(''),
       body:new FormControl('')
     })
-    
-  }
-  add_comp_emp(){
+  
 
     this.empaddservice.add_emp_insert(this.form.value).subscribe((res)=>{
-      console.log(res);
+      //console.log(res)
+      this.viewemp=res
+      this.viewemparray=this.viewemp.getall
+      console.log(this.viewemparray);
     })
   }
-  
+    add_comp_emp(){
+
+      this.empaddservice.add_emp_insert(this.form.value).subscribe((res)=>{
+        console.log(res)
+      })
+
+    }
+      
 
 }
