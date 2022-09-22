@@ -1,0 +1,36 @@
+<div class="container-fluid ">
+
+    <div class="container  mt-5 ">
+
+        <table class="table  table-hover  ">
+            <thead>
+                <tr>
+
+                    <th class="a">ID</th>
+                    <th class="a">title</th>
+                    <th class="a">body</th>
+                    <th class="a">Action</th>
+
+
+                </tr>
+                <tr *ngFor="let get of data">
+
+                    <td class="a">{{get.id}}</td>
+                    <td class="a">{{get.title}}</td>
+                    <td class="a">{{get.body}}</td>
+
+                    <td><a [routerLink]="['/student_view',get.id]" class="btn btn-info">View</a><br>
+                        <a class="btn btn-success">Edit</a><br>
+                        <a class="btn btn-danger">Delete</a><br>
+
+
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
