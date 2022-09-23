@@ -7,22 +7,22 @@ import { StudentService } from '../student.service';
   styleUrls: ['./student-display.component.css']
 })
 export class StudentDisplayComponent implements OnInit {
-  data:any;
-  Form:any;
-  
+  data: any;
+  Form: any;
 
-  constructor(private t:StudentService) { }
+
+  constructor(private t: StudentService) { }
 
   ngOnInit(): void {
 
-    
+
 
     this.t.getdata().subscribe((res) => {
       console.log(res)
-      this.data=res
-  })
+      this.data = res
+    })
 
-}
+  }
 
 
 }
