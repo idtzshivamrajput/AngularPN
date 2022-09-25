@@ -18,7 +18,7 @@ export class StudentDisplayComponent implements OnInit {
 
 
     this.t.getdata().subscribe((res) => {
-      console.log(res)
+      //console.log(res)
       this.data = res
     })
 
