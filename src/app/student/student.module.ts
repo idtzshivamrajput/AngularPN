@@ -6,6 +6,8 @@ import { StudentRoutingModule } from './student-routing.module';
 import { StudentDisplayComponent } from './student-display/student-display.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewStudentComponent } from './view-student/view-student.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { EditStudentComponent } from './edit-student/edit-student.component';
 
 
 @NgModule({
@@ -13,10 +15,12 @@ import { ViewStudentComponent } from './view-student/view-student.component';
     
     StudentDisplayComponent,
          ViewStudentComponent,
+         EditStudentComponent,
   ],
   imports: [
     CommonModule,
     StudentRoutingModule,
+    ReactiveFormsModule,
     HttpClientModule,
   ],
   exports:[
