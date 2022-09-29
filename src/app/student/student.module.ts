@@ -25,7 +25,8 @@ import { EditStudentComponent } from './edit-student/edit-student.component';
   ],
   exports:[
     StudentDisplayComponent,
-    ViewStudentComponent
+    ViewStudentComponent,
+    EditStudentComponent
   ]
 })
 export class StudentModule { }

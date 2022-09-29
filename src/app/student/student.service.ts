@@ -13,11 +13,11 @@ export class StudentService {
     return this.http.get(this.url+'posts')
   }
 
-  view_student(){
+  view_student(id:any){
     return this.http.get(this.url+'posts/'+id)
   }
   updateblog(data:any,id:any){
-    return this.http
+    return this.http.put(this.url+'posts/'+id,data)
   }
 
 

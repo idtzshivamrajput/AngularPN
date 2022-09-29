@@ -16,23 +16,13 @@ export class ViewStudentComponent implements OnInit {
 
   ngOnInit(): void {
     this.id=this.r.snapshot.paramMap.get('id')
-    console.log(this.id)
+    //console.log(this.id)
      this.student_service.view_student(this.id).subscribe((res)=>{
       //console.log(res)
       this.student_view=res;
       console.log(this.student_view)
-
-
-
-
-
-
-     }
-
-
-
-
-
+     })
   }
 
 }
+
